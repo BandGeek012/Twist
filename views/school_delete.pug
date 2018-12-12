@@ -13,10 +13,8 @@ block content
     
       dl
       each participant in school_participants
-        dt 
-          a(href=participant.url) #{participant.PariticpantID}
-        dd #{participant.summary}
-
+        hr
+        p.text-success #{participant.name}
   else
     p Do you really want to delete this School?
     
